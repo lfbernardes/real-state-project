@@ -1,0 +1,139 @@
+.calendar {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .day-active{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #ccc;
+  }
+  
+  .day {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
+  .day-name {
+    font-weight: bold;
+    text-align: center;
+    background-color: #ccc;
+  }
+  
+  .row-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 2px;
+  }
+  
+  .row-header > div {
+    border-radius: 2px;
+    border: solid 1px #ccc;
+    height: 75px;
+    width: 100%;
+  }
+  .row-week-name{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 2px;
+  }
+  .row-week-name > div {
+    border-radius: 2px;
+    border: solid 1px #ccc;
+    height: 25px;
+    width: 100%;
+  }
+  .toolbar{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .view-controls{
+    text-align: right;
+  }
+  .view-controls .btn{
+    margin-left: 10px;
+    
+  }
+  .view-controls .btn:focus{
+    border: 2px solid #c7d8f9;
+  }
+  .date-controls{
+    display: flex;
+  }
+  .date-controls .btn{
+    margin-right: 10px;
+  }
+  .current-view{
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .current-view h3{
+    font-weight: bold;
+  }
+  .week-name{
+    background-color: #ccc;
+    text-align: center;
+    margin: 0 2px 5px 2px;
+    border-radius: 2px;
+  }
+  .week-input{
+    border: 0 1px 0 1px solid white;
+  }
+  .day-time{
+    align-content: center;
+    align-items: center;
+  }
+  .appointments{
+    display: flex;
+    margin-left: 20px;
+
+  }
+  .appointments-link{
+    height: 100%;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 400px;
+  }
+.modal-link-date{
+  display: flex;
+  margin-bottom: 10px;
+}
+.modal-link-date input{
+  margin: 5px;
+}
+.no-resgister{
+  background-color: #ccc;
+  color: red;
+  margin: 50px 20px 20px 20px;
+  text-align: center;
+  padding: 20px;
+}
+.add-register{
+  background-color: rgb(54, 111, 54);
+  
+}
